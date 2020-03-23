@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <title>Customer Portal | Symbio Energy | Price Guarantee Promise | Cheap and green energy in UK</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/customerportal.css" />
+        <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/customerportal.js"></script>
+    </head>
+    <body>
+      <!-- <div class="container customer-portal"> -->
+        <div class="main-content">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo_symbio_energy.png" />
+            </a>
+          </div>
+          <div class="content-data meter-reading" id="meter-reading" data-id="meter-reading">
+            <div class="row">
+              <div class="col-md-5 text-center form-group">
+                <h1 class="form-heading">Submit a Meter Reading</h1>
+                  <p>Enter Your Customer Reference No.</p>
+                  <input type="text" class="input input-inline reference-no" maxlength="7" id="reference-no" /><br/><br/>
+                  <p>Enter Your Post Code</p>
+                  <input type="text" class="input input-inline post-code" maxlength="7" id="post-code" /><br/><br/>
+                  <button class="btn btn-default btn-full btn-dark" id="meter-reading-continue-btn">Continue</button>
+              </div>
+              <!-- <div class="col-md-2">&nbsp;</div> -->
+  
+              <div class="col-md-5 text-center form-group">
+                <h1 class="form-heading">Member Login</h1>
+                  <p>Email</p>
+                  <input type="text" class="input input-inline input-email" name="email" autocomplete="off" id="input-email" /><br/><br/>
+                  <p>Password</p>
+                  <input type="password" class="input input-inline input-password" name="pass" minlength="6" id="input-password" /><br/><br/>
+                  <button class="btn btn-default btn-full btn-dark" id="meter-reading-login-btn">Login</button>
+                  <div class="text-center p-t-12" style="border-top: 0;margin-top: 0; padding-top: 15px;">
+                    <a class="forgot-txt" href="/Login/ForgottenPassword">
+                        Forgot Password?
+                    </a>
+                  </div>
+                  <div class="text-center p-t-126 reg-link" style="width: 357px;">
+                    Registered to Symbio Energy<br>
+                    <a class="reg-txt" href="/Login/Registration">
+                        Create your Account
+                        <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                    </a>
+                </div>
+              </div> 
+            </div>
+                               
+        </div>
+      </div>
+      <!-- </div> -->
+            
+      <!-- /#wrapper -->
+    
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+      <!-- Menu Toggle Script -->
+      <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      </script>
+
+    </body>
+</html>

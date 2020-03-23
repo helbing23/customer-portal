@@ -1,0 +1,248 @@
+/* Title: Custom Customer Portal CSS
+Company Name: Symbio Energy
+Author: Malav Vasita */
+
+/* 
+======================
+Date: 21st Nov 2019
+====================== 
+*/
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-color: #28BCB1;
+    --light-choice: #e9f5f5;
+    --light-choice-selected: rgb(212, 214, 215);
+    --light-background: #ebf7f6;
+    --selected: #13122a;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    /* background: var( --light-choice ); */
+    overflow-x: hidden;
+}
+
+nav{
+  background: var( --light-choice );
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance:textfield; /* Firefox */
+}
+
+.navbar-brand img{
+  width: 35%;
+  margin-bottom: 3rem;
+}
+
+.main-content{
+  width: 70%;
+  margin: 10% 5% 15% 15%;
+}
+
+/* helbin css 16/01/2020 */
+.navbar-brand,
+.navbar-header{
+    text-align: center;
+}
+
+.content{
+  text-align: center;
+}
+
+.content-data{
+  border: 1.5pt solid var(--primary-color);
+  border-radius: 19px;
+  text-align: center;
+  margin:0 auto;
+  width: 85%;
+  padding: 3%;
+  transition: display 0s, opacity 0.5s linear;
+}
+
+.form-group{
+  float: left;
+  width: 100%;
+  margin: 1rem 0;
+  /* margin-bottom: 3rem; */
+}
+
+h1.form-heading{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  
+}
+
+.form-group p{
+  text-align: left;
+  margin: 1% 0;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.btn{
+    
+  text-align: center;
+  border-radius: 19px;
+  margin: 5%;
+}
+
+.btn-dark{
+  background: #463F5E;
+  color: #fff;
+}
+
+.btn-light{
+  background: #d6d6d6;
+  color: #000;
+  font-size: 12px;
+  height: 50px;
+  font-weight: 600;
+}
+
+.btn-full{
+  display: block;
+  width: 7rem;
+  height: 2.5rem;
+  font-size: 18px;
+  border-radius: 12px;
+  /* position: relative;
+  left: 5rem; */
+}
+
+.btn-medium{
+  width: 30%;
+  height: 50px;
+  font-size: 20px;
+}
+
+.input{
+  height: 35px;
+  width: 100%;
+  border-radius: 19px;
+  border: 1.5pt solid var(--primary-color);
+  padding: 0px 20px;
+}
+
+/* .input-inline{
+  width: 20rem;
+  float: left;
+} */
+
+.btn-inline{
+  width: 30%;
+}
+
+textarea:focus, input:focus, .form-control:focus, button:focus{
+  outline: none;
+  box-shadow: none;
+  border: 1.5pt solid var(--primary-color);
+}
+
+.btn-dark:focus,
+.btn-dark:not(:disabled):not(.disabled):active:focus{
+  box-shadow: unset;
+}
+
+.btn:focus{
+  box-shadow: unset;
+  outline: none;
+}
+
+
+/* helbin css ends */
+
+.list-group-item{
+  background: var( --light-choice );
+  padding: .50rem 1.25rem;
+}
+
+.navbar{
+  padding: 2% 1%;
+  border-top-right-radius: 19px;
+}
+
+#sidebar-wrapper {
+  background: var( --light-choice );
+  font-weight: bold;
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+
+  .list-group-item{
+    border: none;
+  }
+
+  .active-nav{
+    background: #fff;
+    color: #000;
+  }
+
+  p.page-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 2%;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    padding: 8.9% 10%;
+    color: var( --primary-color );
+    /* padding-bottom: 2.7%; */
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+
+  .border-bottom{
+    border-bottom: 0 !important;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+      width: 25%;
+      border-bottom-left-radius: 19px;
+      border-top-left-radius: 19px;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+  .logout-btn::after{
+
+  }
